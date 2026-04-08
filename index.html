@@ -275,7 +275,7 @@ Devuelve SOLO este JSON sin backticks ni texto adicional:
 
 Reglas: productos unicos sin duplicados, precios como numeros enteros en guaranies, null si no disponible, maximo 9 productos, mas relevantes primero.`;
 
-    const resp=await fetch("https://api.anthropic.com/v1/messages",{
+    const resp=await fetch("/api/search",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify({
